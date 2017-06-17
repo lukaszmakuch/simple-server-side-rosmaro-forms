@@ -34,20 +34,20 @@ export const login_for_cats = view(() => ({
 
 export const welcome_dog = view(() => ({
 
-	render() {
+  render() {
     return safeHtml`<span class="dog-says">Woof Woof ${this.context.name}!</span>`;
-	},
+  },
 
-	handle(params) {}
+  handle(params) {}
 
 }))
 
 export const welcome_cat = view(() => ({
 
-	render() {
+  render() {
     return safeHtml`<span class="cat-says">Meow Meow ${this.context.name}!</span>`;
-	},
+  },
 
-	handle(params) {}
+  handle(params) {}
 
 }))

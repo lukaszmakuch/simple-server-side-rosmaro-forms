@@ -18,31 +18,31 @@ const set_new_form = () => form = rosmaro(make_form_graph(), make_storage(), mak
 set_new_form()
 
 app.get('/', async (req, res) => {
-	res.send(await render_model(form, req.csrfToken()))
+  res.send(await render_model(form, req.csrfToken()))
 })
 
 app.post('/', async (req, res) => {
-	await form.handle(req)
-	res.redirect('/')
+  await form.handle(req)
+  res.redirect('/')
 })
 
 app.get('/reset', (req, res) => {
-	set_new_form()
-	res.end()
+  set_new_form()
+  res.end()
 })
 
 app.get('/different_token_field_name', async (req, res) => {
-	const options = {
-		csrf_field_name: "token_field"
-	}
-	const node = make_form_view(options)(() => ({
-		render () {},
-		handle () {}
-	}))()
+  const options = {
+    csrf_field_name: "token_field"
+  }
+  const node = make_form_view(options)(() => ({
+    render () {},
+    handle () {}
+  }))()
 
-	const form = rosmaro(node, make_storage(), make_lock())
+  const form = rosmaro(node, make_storage(), make_lock())
 
-	res.send(await render_model(form, 'token_value'))
+  res.send(await render_model(form, 'token_value'))
 })
 
 app.listen(3000, () => console.log('Form listening on port 3000!'))

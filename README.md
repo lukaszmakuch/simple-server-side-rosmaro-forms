@@ -43,12 +43,12 @@ import {render_model} from 'simple-server-side-rosmaro-forms'
 //... building an express app
 
 app.post('/', async (req, res) => {
-	await rosmaro_form_model.handle(req)
-	res.redirect('/')
+  await rosmaro_form_model.handle(req)
+  res.redirect('/')
 })
 
 app.get('/', async (req, res) => {
   //you probably want to add the whole html skeleton as well
-	res.send(await render_model(rosmaro_form_model, req.csrfToken()))
+  res.send(await render_model(rosmaro_form_model, req.csrfToken()))
 })
 ```
