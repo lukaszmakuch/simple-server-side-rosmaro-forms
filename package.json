@@ -6,7 +6,7 @@
     "forms",
     "wizards"
   ],
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Łukasz Makuch <kontakt@lukaszmakuch.pl> (http://lukaszmakuch.pl)",
   "dependencies": {
     "common-tags": "^1.4.0"
