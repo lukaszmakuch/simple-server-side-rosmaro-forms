@@ -1,8 +1,8 @@
 exports.command = function(newValue) {
-  this.executeAsync(function (newValue) {
+  return this.executeAsync(function (newValue, done) {
     document.querySelectorAll("input[name='_csrf']").forEach(
       elem => elem.value = newValue
     )
+    done(true);
   }, [newValue])
-  return this
 }

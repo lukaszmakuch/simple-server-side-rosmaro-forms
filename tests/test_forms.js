@@ -40,7 +40,8 @@ module.exports = {
     browser
       .reset()
       .url('http://localhost:3000')
-      .waitForElementPresent('input[name="_csrf"]', 1000)
+      .waitForElementPresent('form:nth-child(1) > input[name="_csrf"]', 1000)
+      .waitForElementPresent('form:nth-child(2) > input[name="_csrf"]', 1000)
       .alterCsrfToken('not a valid token')
       .click('input[value="log in as dog"]')
       .assert.containsText('body', 'invalid csrf token')
