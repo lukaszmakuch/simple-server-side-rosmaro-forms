@@ -25,7 +25,7 @@ export const make_form_view = (altered_options = {}) => proto_factory => {
     //exposed render method takes the csrf token
     leaf.render = function (csrf_token) {
       return html`
-        <form action="" method="post">
+        <form method="post">
           <input
             type="hidden"
             name="${options.csrf_field_name}"
