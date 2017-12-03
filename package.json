@@ -6,7 +6,7 @@
     "forms",
     "wizards"
   ],
-  "version": "1.0.4",
+  "version": "1.0.5",
   "repository": {
     "type": "git",
     "url": "https://github.com/lukaszmakuch/simple-server-side-rosmaro-forms.git"
