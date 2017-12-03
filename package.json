@@ -7,6 +7,10 @@
     "wizards"
   ],
   "version": "1.0.4",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lukaszmakuch/simple-server-side-rosmaro-forms.git"
+  },
   "author": "Łukasz Makuch <kontakt@lukaszmakuch.pl> (http://lukaszmakuch.pl)",
   "dependencies": {
     "common-tags": "^1.4.0"
@@ -16,13 +20,14 @@
     "babel-plugin-syntax-object-rest-spread": "^6.13.0",
     "babel-plugin-transform-object-rest-spread": "^6.23.0",
     "babel-preset-env": "^1.4.0",
-    "chromedriver": "^2.30.1",
-    "nightwatch": "^0.9.16",
     "body-parser": "^1.17.1",
+    "chromedriver": "^2.33.2",
     "cookie-parser": "^1.4.3",
+    "jest": "^21.2.1",
     "csurf": "^1.9.0",
     "express": "^4.15.2",
     "rosmaro": "^0.0.*",
+    "selenium-webdriver": "^3.6.0",
     "rosmaro-in-memory-storage": "0.0.1",
     "rosmaro-process-wide-lock": "0.0.1"
   },
@@ -32,7 +37,7 @@
   "main": "./dist/forms.js",
   "scripts": {
     "build": "./node_modules/.bin/babel src -d dist",
-    "test": "./node_modules/nightwatch/bin/nightwatch",
+    "test": "./node_modules/.bin/jest ./tests",
     "app_for_tests": "./node_modules/.bin/babel-node app_for_tests/index.js ",
     "prepublish": "npm run build"
   }

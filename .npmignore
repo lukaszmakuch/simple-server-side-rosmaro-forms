@@ -1,7 +1,4 @@
 src
 tests
-test_cmds
 app_for_tests
 .babelrc
-nightwatch_globals.js
-nightwatch.json
