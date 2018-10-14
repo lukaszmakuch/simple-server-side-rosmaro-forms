@@ -6,7 +6,7 @@
     "forms",
     "wizards"
   ],
-  "version": "1.0.5",
+  "version": "1.0.6",
   "repository": {
     "type": "git",
     "url": "https://github.com/lukaszmakuch/simple-server-side-rosmaro-forms.git"
@@ -19,17 +19,17 @@
     "babel-cli": "^6.24.1",
     "babel-plugin-syntax-object-rest-spread": "^6.13.0",
     "babel-plugin-transform-object-rest-spread": "^6.23.0",
-    "babel-preset-env": "^1.4.0",
+    "babel-preset-env": "^1.7.0",
     "body-parser": "^1.17.1",
-    "chromedriver": "^2.33.2",
+    "chromedriver": "^2.42.0",
     "cookie-parser": "^1.4.3",
-    "jest": "^21.2.1",
     "csurf": "^1.9.0",
     "express": "^4.15.2",
+    "jest": "^21.2.1",
     "rosmaro": "^0.0.*",
-    "selenium-webdriver": "^3.6.0",
     "rosmaro-in-memory-storage": "0.0.1",
-    "rosmaro-process-wide-lock": "0.0.1"
+    "rosmaro-process-wide-lock": "0.0.1",
+    "selenium-webdriver": "^3.6.0"
   },
   "engines": {
     "node": ">=6.10"
