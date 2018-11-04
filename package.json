@@ -6,7 +6,7 @@
     "forms",
     "wizards"
   ],
-  "version": "1.0.6",
+  "version": "1.0.7",
   "repository": {
     "type": "git",
     "url": "https://github.com/lukaszmakuch/simple-server-side-rosmaro-forms.git"
@@ -25,7 +25,7 @@
     "cookie-parser": "^1.4.3",
     "csurf": "^1.9.0",
     "express": "^4.15.2",
-    "jest": "^21.2.1",
+    "jest": "^23.6.0",
     "rosmaro": "^0.0.*",
     "rosmaro-in-memory-storage": "0.0.1",
     "rosmaro-process-wide-lock": "0.0.1",
